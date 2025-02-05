@@ -1,0 +1,13 @@
+@use "variables";
+@use "breakpoints";
+@use "base";
+
+
+//components
+@use "components/index";
+
+//pages
+@use "pages/index" as index2;
+
+
+@use "global";
