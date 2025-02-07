@@ -1,0 +1,57 @@
+@use "../variables";
+
+.time-range {
+
+  &__body {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__title {
+    flex: 0 1 14rem;
+    font-size: 2.4rem;
+    color: variables.$inactive;
+    font-weight: bold;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+  &__values {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 12rem;
+    width: 100%;
+    color: variables.$inactive;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    border: 2px solid #273246FF;
+    border-radius: 5rem;
+    padding: 1.5rem 1rem;
+
+    &:hover,
+    &.active {
+      border-color: variables.$semi-white;
+
+      span {
+        color: variables.$semi-white;
+      }
+    }
+
+
+    span {
+      white-space: nowrap;
+      transition: color variables.$transition;
+    }
+  }
+}

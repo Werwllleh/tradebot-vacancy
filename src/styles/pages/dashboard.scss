@@ -1,0 +1,13 @@
+.dashboard {
+  height: 100%;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  &__timerange {
+    margin: auto 0 0 0;
+  }
+}

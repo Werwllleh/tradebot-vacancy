@@ -26,3 +26,22 @@ export const MENU = [
     IMAGE: 'profile.svg'
   }
 ]
+
+export const TimeRangeValues = [
+  {
+    value: '',
+    text: '24h'
+  },
+  {
+    value: '',
+    text: '7 days'
+  },
+  {
+    value: '',
+    text: '30 days'
+  },
+  {
+    value: null,
+    text: 'All time'
+  },
+]
