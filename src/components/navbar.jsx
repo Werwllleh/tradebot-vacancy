@@ -1,7 +1,8 @@
 import React from 'react';
-import {MENU} from "../utils/data";
 import SVG from 'react-inlinesvg';
 import { Link, useLocation } from 'react-router-dom';
+import {menu} from "../utils/data";
+import cn from 'classnames';
 
 const Navbar = () => {
 
@@ -10,12 +11,12 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar__body">
-        {MENU.length && MENU.map((item) => {
+        {Object.values(menu).length && Object.values(menu).map((item) => {
 
           const isActive = location.pathname === item.ROUTE;
 
           return (
-            <Link className={`navbar__link ${isActive ? 'active' : ''}`} to={item.ROUTE} key={item.TITLE}>
+            <Link className={cn('navbar__link', {active: isActive})} to={item.ROUTE} key={item.TITLE}>
               <span className="navbar__link-icon">
                 <SVG src={`/images/icons/navbar/${item.IMAGE}`} title={item.TITLE} />
               </span>

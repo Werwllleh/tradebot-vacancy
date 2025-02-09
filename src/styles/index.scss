@@ -6,8 +6,11 @@
 //components
 @use "components/index";
 
+//components ui
+@use "components/ui/index" as index2;
+
 //pages
-@use "pages/index" as index2;
+@use "pages/index" as index3;
 
 
 @use "global";

@@ -1,0 +1,48 @@
+@use "../variables";
+
+.bots-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: stretch;
+  gap: .2rem;
+
+  &__items {
+
+  }
+
+  .bot-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1rem 3.5rem;
+    cursor: pointer;
+    background-color: #252D40FF;
+    border-radius: .8rem;
+    height: 100%;
+    transition: box-shadow variables.$transition;
+
+    &:hover {
+      box-shadow: 0 0 5rem 0 inset #28527e;
+    }
+
+    &__body {}
+
+    &__image {
+      height: 9rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__name {
+      margin: 2rem 0 0 0;
+      text-align: center;
+      color: variables.$semi-white;
+      text-transform: uppercase;
+      font-size: 2.4rem;
+      font-weight: 500;
+    }
+
+    &__value {}
+  }
+}
